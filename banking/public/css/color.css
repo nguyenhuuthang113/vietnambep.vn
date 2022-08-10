@@ -1,0 +1,9 @@
+:root {
+    --primary-color: #ca892e;
+    --secondary-color: #231f20;
+    --dark-color: #c57d18;
+}
+.modal {
+    --header-color: #e41515;
+    --body-color: #d64444;
+} /* */

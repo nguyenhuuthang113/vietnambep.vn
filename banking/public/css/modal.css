@@ -1,0 +1,65 @@
+.modal {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px dashed rgb(59, 25, 25);
+    display: none;
+}
+.modal.active {
+    display: block;
+    animation: fadein 1s,
+                slidein 1s;
+}
+.modal-top {
+    background: rgb(30,30,30);
+    background: linear-gradient(173deg, rgba(30,30,30,1) 0%, rgba(30,30,30,1) 85%);
+    padding: 30px 20px;
+    text-align: center;
+}
+.modal-top img {
+    width: 60%;
+    margin-bottom: 20px;
+}
+.modal-top .modal-title {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.modal-top .modal-content {
+    font-size: 15px;
+    font-weight: 400;
+    color: #eee;
+}
+.modal-bottom {
+    display: flex;
+    margin: 0;
+    background: #000;
+    border-top: 2px solid #000;
+}
+.modal-btn {
+    flex: 1;
+    background: #444444;
+    font-size: 15px;
+    font-weight: 450;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+#transfer {
+    border-right: 1px solid #000;
+}
+#dismiss {
+    border-left: 1px solid #000;
+}
+.modal-btn:hover {
+    background: #515151;
+}
+/* ===== ANIMATION ===== */

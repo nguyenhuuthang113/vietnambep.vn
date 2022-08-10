@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    overflow: hidden !important;
+    background: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* ===== DEFAULT CSS ===== */
+.blue {
+    color: #108EE9;
+}
+.blur {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+.banks ~ a {
+    display: block;
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 10px;
+    background: var(--primary-color);
+    text-align: center;
+    font-weight: 500;
+    transition: 0.5s ease-in;
+    text-transform: uppercase;
+}
+.banks ~ a:hover {
+    color: var(--primary-color);
+    background: url('../images/bank_background.png');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--dark-color);
+}
+/* ===== CONTAINER ===== */
+.container{
+    width: 411px;
+    max-width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px 12px 30px 20px;
+    overflow: hidden scroll;
+    background: #111;
+    color: var(--primary-color);
+}
+/* ===== PROFILE HEADER ===== */
+.profile-header{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.profile-avatar{
+    width: 100px;
+    height: 100px;
+    background-color: var(--dark-color);
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+.profile-info{
+    margin-top: auto;
+    padding: 0px 15px;
+    flex: 1;
+}
+.profile-name {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.check-mark {
+    font-size: 18px;
+    font-weight: 500;
+}
+.skills{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.skill-tag{
+    padding: 3px 10px;
+    margin-right: 10px;
+    color: var(--primary-color);
+    font-size: 12px;
+    position: relative;
+    display: none;
+}
+.skill-tag:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+    opacity: 0.25;
+    border-radius: 5px;
+}
+.skill-tag:first-child {
+    display: block;
+}
+.skill-tag:nth-child(2) {
+    display: block;
+}
+/* ===== TITLE ===== */
+.title{
+    margin-bottom: 15px;
+}
+/* ===== BANKS ===== */
+.banks {
+    width: 100%;
+    --size: 80px;
+    --border-size: 2px;
+    --border-rounded: 25px;
+}
+.bank:last-child {
+    margin-bottom: 0px;
+}
+.bank {
+    width: 100%;
+    height: var(--size);
+    background: var(--secondary-color);
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border: var(--border-size) solid var(--dark-color);
+    /* border-radius: var(--border-rounded); */
+    transition: 0.2s ease-in-out;
+    animation: fadein 2s;
+}
+.bank-logo {
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   transition: 0.3s ease;
+}
+.bank-info {
+    flex: 1;
+    text-align: center;
+    padding: 10px 7.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.bank-info > p {
+    font-weight: 500;
+    line-height: 1;
+}
+.bank-name{
+    font-size: 13px;
+}
+.bank-number{
+    font-size: 13px;
+}
+.bank-owner {
+    font-size: 13px;
+}
+.btn-copy{
+    width: 60px;
+    text-align: center;
+    font-size: 12px;
+    height: fit-content;
+    padding: 5px 10px;
+    position: relative;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.btn-copy:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: currentColor;
+    border-radius: 10px;
+    opacity: 0.1;
+}
+.btn-copy:hover:before {
+    opacity: 1;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+}
+.bank:hover {
+    background-color: rgb(232, 241, 241);
+    /* phông nền thanh toán khi đưa chuột vào */
+    background-image: url('../images/bank_background.png');
+    background-size: cover;
+    background-position: center;
+}
+.bank:hover .bank-logo {
+    opacity: 0;
+}
+/* ===== ANIMATION ===== */
+@keyframes fadein {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+@keyframes slidein {
+    from {
+        top: 120%;
+    }
+    to {
+        top: 50%;
+    }
+}

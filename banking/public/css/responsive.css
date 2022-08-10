@@ -1,0 +1,71 @@
+@media only screen and (max-width: 410px) {
+    .container {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .modal {
+        width: 320px;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    .profile-avatar {
+        width: 90px;
+        height: 90px;
+    }
+    .profile-name {
+        font-size: 20px;
+    }
+    .check-mark {
+        font-size: 16px;
+    }
+    .bank {
+        height: 70px;
+    }
+    .bank-info {
+        padding: 10px;
+    }
+    .bank-info > p {
+        font-size: 13px;
+    }
+    .modal {
+        width: 315px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .banks ~ a {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .banks ~a > .pay-here {
+        display: none;
+    }
+    .profile-avatar {
+        width: 80px;
+        height: 80px;
+    }
+    .profile-name {
+        font-size: 18px;
+    }
+    .check-mark {
+        font-size: 14px;
+    }
+    .bank {
+        height: 65px;
+    }
+    .bank-info {
+        padding: 7.5px 5px;
+    }
+    .bank-info > p {
+        font-size: 10px;
+    }
+    .btn-copy {
+        font-size: 10px;
+    }
+    .modal {
+        width: 295px;
+    }
+}
