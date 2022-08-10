@@ -59,7 +59,7 @@ const __DATA__ = {
             'image' : 'wallet.png',
             'title' : 'Thông Tin Thanh Toán', 
             'show-value' : 'TRƯƠNG HOÀI',
-            'value' : 'https://nguyenhuuthang113.github.io/bank.vietnambep.vn/',
+            'value' : 'https://nguyenhuuthang113.github.io/vietnambep.vn/banking/',
             'type' : 0,
         },
     ]
