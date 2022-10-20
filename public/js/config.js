@@ -28,6 +28,13 @@ const __DATA__ = {
             'type' : 0,
         },
         {
+            'image' : 'catalogue.jpg',
+            'title' : 'Báo Giá Đại Lý', 
+            'show-value' : 'File Driver',
+            'value' : 'https://drive.google.com/drive/folders/1bMkz90-3qQJGLE4eSsiF6Cjt4wCtroDv?usp=sharing',
+            'type' : 0,
+        },
+        {
             'image' : 'facebook.jpg',
             'title' : 'Facebook Công Việc', 
             'show-value' : 'Việt Nam Bếp' ,
